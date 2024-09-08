@@ -1,5 +1,5 @@
-import sol01 from "../Images/pexels-solution-01-.jpg"
-import sol02 from "../Images/pexels-ahmet-cotur-solution-02-.jpg"
+import sol01 from "./Images/pexels-solution-01-.jpg"
+import sol02 from "./Images/pexels-ahmet-cotur-solution-02-.jpg"
 
 
 
@@ -15,11 +15,11 @@ const Solution = () => {
         <span className="text-1xl font-bold">Discover Our Real Estate Services</span>
         </div>
         
-        <div className=" bg-gray-100 top-16 left-[500px] lg:h-[950px] w-[600px] absolute flex justify-center rounded-xl" >
+        <div className=" bg-gray-100 top-16 left-[500px] lg:h-[920px] w-[600px] absolute flex justify-center rounded-xl" >
        <span className=" p-2 text-2xl font-semibold font-serif text-black">Our Range of Services</span><br/>
            
            <div className="absolute top-8 p-3 ">
-            <img className="rounded-xl" src={sol02} alt="image2"/>
+            <img className="rounded-xl hover:skew-y-6" src={sol02} alt="image2"/>
            </div>
            <ul className="absolute top-[423px] p-5 ">
              <span className="font-serif font-semibold">Expert Property Buying Assistance</span>
@@ -42,15 +42,44 @@ const Solution = () => {
        
 
 
-      <div className="relative ">
+      <div className="flex-col-reverse justify-center ">
     
-         <div className="bg-slate-500 h-screen w-screen">
-         <h2 className=" text-2xl text-wrap lg:text-3xl font-bold text-center pt-20 font-serif">What Makes Us Different from Others ?</h2>
-              <div className="bg-orange-300 lg:h-32 absolute bottom-[500px] left-96 p-4 rounded-3xl font-serif">
+         <div className="bg-orange-200 h-[550px] w-screen ">
+              <h2 className=" text-2xl text-wrap lg:text-3xl font-bold text-center pt-24 font-serif flex justify-center">What Makes Us Different from Others ?</h2>
+
+             <div className="  text-center lg: pt-20 gap-8 flex justify-center ">
+                <div className="bg-slate-300 lg:h-30  bottom-[500px] left-96 p-12 rounded-3xl font-serif hover:origin-top-right rotate-3 ">
                 <span className="text-center text-2xl p-9 font-semibold">Expertise</span><br/>
-                <span className="p-6 font-medium">Years of Experience</span>
-              </div>
+                <span className="p-6 font-medium">Years of Experience</span> 
+                <p>98%</p>
+                <span>Client Statisfaction Rate</span> 
+                </div>
+
+
+                 <div className="bg-slate-300 lg:h-30  bottom-[500px] left-48 p-12 rounded-3xl font-serif hover:origin-top-left rotate-6 ">
+                  <span className="text-center text-2xl p-9 font-semibold">Customer-Centric</span><br/>
+                  <span className="p-6 font-medium">Client Staisfaction</span>
+                  <p>1.5x</p>
+                  <span>Unmatched Property Listing Growth</span>
+                 </div>
+
+                 <div className="bg-slate-300 lg:h-30  bottom-[500px] left-6 p-12 rounded-3xl font-serif hover:origin-top-right rotate-3 ">
+                  <span className="text-center text-2xl p-9 font-semibold">Inovation</span><br/>
+                <span className="p-6 font-medium">Creative Solutions</span>
+                <p>72%</p>
+                <span>Properties Sold Successfully</span>
+                 </div>
+
+                 <div className="bg-slate-300 lg:h-30  bottom-[500px] left-6 p-12 rounded-3xl font-serif hover:origin-top-left rotate-6 ">
+                  <span className="text-center text-2xl p-1 font-semibold">Transparency</span><br/>
+                <span className="p-6 font-medium">Open Communication</span>
+                <p>50+</p>
+                <span>Over 50 Years Of Combined <br/> Experience in Real Estate </span>
+                 </div>
+            </div>
+
          </div>
+
       </div>
     
        </div>

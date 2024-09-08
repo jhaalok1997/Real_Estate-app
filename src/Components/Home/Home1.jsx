@@ -1,7 +1,7 @@
-import Heroimg from "../Images/1st-hero-unsplash.jpg"
-import firstimg from "../Images/2nd-page-home-unsplash.jpg"
-import secondimg from "../Images/3rd-home-unsplash.jpg"
-import primeLoc from "../Images/hutomo-abrianto-9mPl0Zo7_gQ-unsplash.jpg"
+import Heroimg from "./Images/1st-hero-unsplash.jpg"
+import firstimg from "./Images/2nd-page-home-unsplash.jpg"
+import secondimg from "./Images/3rd-home-unsplash.jpg"
+import primeLoc from "./Images/hutomo-abrianto-9mPl0Zo7_gQ-unsplash.jpg"
 
 
 const Home = () => {
@@ -76,6 +76,13 @@ const Home = () => {
                          </div>
                      </div>
                  </div> 
+
+                 {/* */}
+                     
+
+
+                 
+                 
 
              </div>
 

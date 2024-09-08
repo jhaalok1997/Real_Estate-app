@@ -1,8 +1,8 @@
-import Navbar from "./Header/Navbar.jsx"
+import Navbar from "./Components/Navbar/Navbar.jsx"
 import './App.css'
-import ContactUs from "./Header/Contactus.jsx";
-import Home from "./Header/Home.jsx"
-import Solution from "./Header/Solution.jsx";
+import ContactUs from "./Components/Contact/ContactUs.jsx";
+import Home from "./Components/Home/Home1.jsx"
+import Solution from "./Components/Solution/Solution.jsx";
 
 function App() {
   return (
