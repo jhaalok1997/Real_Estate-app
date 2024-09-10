@@ -2,11 +2,10 @@ import sol01 from "./Images/pexels-solution-01-.jpg"
 import sol02 from "./Images/pexels-ahmet-cotur-solution-02-.jpg"
 
 
-
 const Solution = () => {
   return (
     <div className="">
-          
+       
       <div className="    lg:h-[1000px] w-screen relative ">
         <img src={sol01} alt="image"/>
 

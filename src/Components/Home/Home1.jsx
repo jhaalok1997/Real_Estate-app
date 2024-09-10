@@ -1,15 +1,19 @@
-import Heroimg from "./Images/1st-hero-unsplash.jpg"
-import firstimg from "./Images/2nd-page-home-unsplash.jpg"
-import secondimg from "./Images/3rd-home-unsplash.jpg"
-import primeLoc from "./Images/hutomo-abrianto-9mPl0Zo7_gQ-unsplash.jpg"
+
+import HeroImg from "./HImages/1st-hero-unsplash.jpg"
+import firstImg  from "./HImages/2nd-page-home-unsplash.jpg"
+import secondImg from "./HImages/3rd-home-unsplash.jpg"
+import thirdImg from "./HImages/home -pexels-fotoaibe-1571463.jpg"
+import fourthImg from "./HImages/hutomo-abrianto-9mPl0Zo7_gQ-unsplash.jpg"
+import fifthImg from "./HImages/pexels-heyho-7031607.jpg"
 
 
-const Home = () => {
+const Home1 = () => {
   return (
+
     <div>
-           
+        
          {/* HERO IMAGES STARTED*/} 
-           <img  className="h-[88vh] w-screen " src={Heroimg} alt="Hero image "/>
+           <img  className="h-[88vh] w-screen " src={HeroImg} alt="Hero image "/>
 
        <div className="m-6 top-8 relative ">
         <div className="text-5xl font-semibold text-wrap m-4 text-amber-500 absolute bottom-44">
@@ -22,10 +26,10 @@ const Home = () => {
             </div>
         </div>
 
-            {/* KEY FEATURES IMAGES START  2nd page*/}
+            {/* KEY FEATURES IMAGES START  1st page*/}
 
 
-            <div className="bg-red-200 h-[335vh] lg:bg-zinc-300 ">
+            <div className="bg-red-200 h-[458vh] lg:bg-zinc-300 ">
 
                  <div className="flex justify-center pt-8">
                       <span className="text-4xl font-serif font-semibold">Key Features</span>
@@ -33,7 +37,7 @@ const Home = () => {
 
                  <div className="relative">
                      <div className="flex justify-center p-20 lg:justify-start pl-40">
-                         <img className="w-96 rounded-3xl" src={firstimg} alt="First image"/>
+                         <img className="w-96 rounded-3xl" src={firstImg} alt="First image"/>
                      </div>
 
                      <div className=" text-center lg:absolute top-72 left-[730px]">
@@ -49,7 +53,7 @@ const Home = () => {
 
                  <div className="relative">
                      <div className="flex justify-center p-24 lg:justify-start pl-40">
-                         <img className="w-96 rounded-3xl" src={secondimg} alt="second image"/>
+                         <img className="w-96 rounded-3xl" src={secondImg} alt="second image"/>
                      </div>
 
                      <div className="text-center lg:absolute top-72 left-[730px]">
@@ -65,10 +69,10 @@ const Home = () => {
 
                  <div className="relative">
                      <div className="flex justify-center p-24 lg:justify-start pl-40">
-                         <img className="w-96 rounded-3xl" src={primeLoc} alt="second image"/>
+                         <img className="w-96 rounded-3xl" src={thirdImg} alt="second image"/>
                      </div>
 
-                     <div className="text-center lg:absolute top-72 left-[730px]">
+                     <div className="text-center pb-12 lg:absolute top-72 left-[730px]">
                            <span className="font-semibold text-3xl font-serif">Prime Locations </span>
                   
                         <div className=" text-center lg:p-2 ">
@@ -77,17 +81,40 @@ const Home = () => {
                      </div>
                  </div> 
 
-                 {/* */}
+                 {/* Our Services  Page 2 Started*/}
                      
+                     <div className="bg-slate-300 h-[1300px] ">
+                           <div className="text-3xl text-center pt-12">
+                            <span className="font-semibold font-serif">Our Services</span>
 
+                           </div>
 
-                 
-                 
+                         <div className="bg-amber-200 text-center p-1 m-12 text-wrap justify-center rounded-md   ">
+                             <img className="h-72 w-96 rounded-lg" src={fourthImg} alt="cardImage"/> 
+
+                             <div className="text-">
+                                 <h2 className="text-1xl font-semibold font-serif pt-4">Property Listing</h2>
+                                 <span >Acccess a wide range of property listings tailored to<br/> your preferences. Our platform offers detailed <br/> information to simplify your search process.</span>
+                             </div>
+                          </div>
+
+                                   {/* */}
+
+                                   <div className="bg-amber-200 text-center p-1 m-12 text-wrap justify-center rounded-md   ">
+                                          <img className="h-72 w-96 rounded-lg" src={fifthImg} alt="cardImage"/> 
+
+                                  <div className="text-">
+                                    <h2 className="text-1xl font-semibold font-serif pt-4">Property Listing</h2>
+                                    <span >Acccess a wide range of property listings tailored to<br/> your preferences. Our platform offers detailed <br/> information to simplify your search process.</span>
+                                  </div>
+                                 </div>         
+
+                     </div>
 
              </div>
-
-    </div>
+    
+          </div>
   )
 }
 
-export default Home;
+export default Home1;
