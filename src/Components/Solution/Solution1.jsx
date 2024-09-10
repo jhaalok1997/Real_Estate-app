@@ -1,11 +1,11 @@
 import sol01 from "./Images/pexels-solution-01-.jpg"
 import sol02 from "./Images/pexels-ahmet-cotur-solution-02-.jpg"
+import { Outlet } from "react-router-dom"
 
-
-const Solution = () => {
+const Solution1 = () => {
   return (
     <div className="">
-       
+       <Outlet/>
       <div className="    lg:h-[1000px] w-screen relative ">
         <img src={sol01} alt="image"/>
 
@@ -86,4 +86,4 @@ const Solution = () => {
   )
 }
 
-export default Solution
+export default Solution1;

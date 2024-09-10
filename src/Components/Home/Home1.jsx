@@ -69,7 +69,7 @@ const Home1 = () => {
 
                  <div className="relative">
                      <div className="flex justify-center p-24 lg:justify-start pl-40">
-                         <img className="w-96 rounded-3xl" src={thirdImg} alt="second image"/>
+                         <img className="w-96 rounded-3xl" src={thirdImg} alt="Third image"/>
                      </div>
 
                      <div className="text-center pb-12 lg:absolute top-72 left-[730px]">
