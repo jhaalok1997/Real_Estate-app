@@ -1,6 +1,9 @@
 import { useState } from "react"
+import Accordion from "./Accordion";
 
-const ContactUs = () => {
+
+
+const ContactUs = (items) => {
 const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -24,7 +27,7 @@ const [formData, setFormData] = useState({
 
 
   return (
-    <div className=" bg-orange-200 h-screen w-screen relative ">
+  <div className=" bg-orange-200 h-[130vh] w-screen relative ">
         <div className=" text-center p-14 lg:text-start absolute top-28">
             <span className="text-2xl font-serif font-semibold lg:text-5xl text-blue-400">Contact Our <br/>Real Estate Team </span>
             <br/>
@@ -48,48 +51,48 @@ const [formData, setFormData] = useState({
   
 
     <form onSubmit={handleSubmit}>
-      <div className="text-md p-4">
-        <label htmlFor="firstName">First Name: </label>
-        <input
-          type="text"
-          id="firstName"
-          placeholder=" Your first name..."
-          name="firstName"
-          value={formData.firstName}
-          onChange={handleChange}
-        />
-      </div>
-      <div className="p-1 text-md">
-        <label htmlFor="lastName">Last Name:</label>
-        <input
-          type="text"
-          id="lastName"
-          placeholder=" Your last name..."
-          name="lastName"
-          value={formData.lastName}
-          onChange={handleChange}
-        />
-      </div>
-      <div className="p-1 text-md">
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-      </div>
-      <div className="p-1 text-md">
-        <label htmlFor="message">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-        />
-      </div>
-      <button className="bg-red-500 rounded-md" type="submit">Join us</button>
+                <div className="text-md p-4">
+          <label htmlFor="firstName">First Name: </label>
+          <input
+            type="text"
+            id="firstName"
+            placeholder=" Your first name..."
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}/>
+          </div>
+
+          <div className="p-1 text-md">
+             <label htmlFor="lastName">Last Name:</label>
+             <input
+               type="text"
+               id="lastName"
+               placeholder=" Your last name..."
+               name="lastName"
+               value={formData.lastName}
+               onChange={handleChange}/>
+          </div>
+
+          <div className="p-1 text-md">
+             <label htmlFor="email">Email:</label>
+               <input
+                 type="email"
+                 id="email"
+                 name="email"
+                 value={formData.email}
+                onChange={handleChange}/>
+          </div>
+
+          <div className="p-1 text-md">
+             <label htmlFor="message">Message:</label>
+               <textarea
+                 id="message"
+                 name="message"
+                 value={formData.message}
+                 onChange={handleChange} />
+          </div>
+
+                <button className="bg-red-500 rounded-md" type="submit">Join us</button>
     </form>
 
   
@@ -97,7 +100,15 @@ const [formData, setFormData] = useState({
 
            </div>
         </div>
+
+
+
+
+
+        <Accordion items={items}/>
+        
     </div>
+    
   )
 }
 

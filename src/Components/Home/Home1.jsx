@@ -29,7 +29,7 @@ const Home1 = () => {
             {/* KEY FEATURES IMAGES START  1st page*/}
 
 
-            <div className="bg-red-200 h-[458vh] lg:bg-zinc-300 ">
+            <div className=" h-[458vh]  ">
 
                  <div className="flex justify-center pt-8">
                       <span className="text-4xl font-serif font-semibold">Key Features</span>
