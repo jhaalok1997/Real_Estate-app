@@ -5,7 +5,7 @@ import {  NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="">
+    <div className="w-screen">
        <div className="  p-3 text-black flex space-x-24  bg-purple-100">
            <h1 className="text-1xl font-bold ">Real Estate</h1>
            <div className="  lg:space-x-14 font-serif space-x-1 ">

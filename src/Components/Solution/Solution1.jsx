@@ -43,7 +43,7 @@ const Solution1 = () => {
 
       <div className="flex-col-reverse justify-center ">
     
-         <div className="bg-orange-200 h-[550px] w-screen ">
+         <div className=" h-[550px] w-screen ">
               <h2 className=" text-2xl text-wrap lg:text-3xl font-bold text-center pt-24 font-serif flex justify-center">What Makes Us Different from Others ?</h2>
 
              <div className="  text-center lg: pt-20 gap-8 flex justify-center ">
