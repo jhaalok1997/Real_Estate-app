@@ -34,7 +34,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="  p-4 pt-64 h-[90vh] absolute bottom-5 lg:pb-10">
+    <div className="p-4 pt-64 h-[90vh] absolute bottom-5 lg:pb-10 ">
         <h1 className="text-2xl text-center font-serif">Requested Questions from Clients </h1><br/>
     <div className="accordion bg-slate-500 h-[53vh] w-[90vw] p-4 rounded-xl lg:h-[45vh] ">
         
