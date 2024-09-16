@@ -8,6 +8,12 @@ import fifthImg from "./HImages/pexels-heyho-7031607.jpg"
 
 
 const Home1 = () => {
+       
+
+
+
+
+
   return (
 
     <div>

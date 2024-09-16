@@ -9,12 +9,15 @@ import Contact from "./Components/Contact/ContactUs.jsx"
 import AboutUs from "./Components/About/AboutUs.jsx"
 import Solution1 from "./Components/Solution/Solution1.jsx"
 
+import { Auth0Provider } from '@auth0/auth0-react';
+
 
 const router = createBrowserRouter([
      {
       path:'/',
       element:<App/>,
       children:[
+       
         {
           path:"/Home",
           element:<Home/>,
@@ -44,9 +47,16 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   
-  <StrictMode>
-    
-     <RouterProvider router = {router}/>
   
-  </StrictMode>,
+     <Auth0Provider
+         domain = "dev-8k08ezgxpz0mfate.us.auth0.com"
+         clientId = "Jz8oNNpeQFMwVzr8mskUlycqMkwpnnGS"
+         authorizationParams={{
+          redirect_uri: window.location.origin
+        }}>
+         
+       
+         <RouterProvider router = {router}/>
+      </Auth0Provider>
+  
 )
