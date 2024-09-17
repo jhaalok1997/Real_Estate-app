@@ -9,17 +9,12 @@ import fifthImg from "./HImages/pexels-heyho-7031607.jpg"
 
 const Home1 = () => {
        
-
-
-
-
-
   return (
 
     <div>
         
          {/* HERO IMAGES STARTED*/} 
-           <img  className="h-[88vh] w-screen " src={HeroImg} alt="Hero image "/>
+           <img  className="h-[85vh] w-screen" src={HeroImg} alt="Hero image "/>
 
        <div className="m-6 top-8 relative ">
         <div className="text-5xl font-semibold text-wrap m-4 text-amber-500 absolute bottom-44">
@@ -35,7 +30,7 @@ const Home1 = () => {
             {/* KEY FEATURES IMAGES START  1st page*/}
 
 
-            <div className=" h-[458vh]  ">
+            <div className=" h-[386vh] ">
 
                  <div className="flex justify-center pt-8">
                       <span className="text-4xl font-serif font-semibold">Key Features</span>
@@ -89,7 +84,7 @@ const Home1 = () => {
 
                  {/* Our Services  Page 2 Started*/}
                      
-                     <div className="bg-slate-300 h-[1300px] ">
+                     <div className="bg-slate-300 h-[1100px] w-screen ">
                            <div className="text-3xl text-center pt-12">
                             <span className="font-semibold font-serif">Our Services</span>
 

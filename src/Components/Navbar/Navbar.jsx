@@ -1,4 +1,4 @@
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
 
@@ -10,27 +10,27 @@ const Navbar = () => {
   }
 
   return (
-    <div className="w-screen">
-       <div className="  p-3 text-black flex space-x-24  bg-purple-100">
-           <h1 className="text-1xl font-bold ">Real Estate</h1>
-           <div className="  lg:space-x-14 font-serif space-x-1 ">
-             <a><NavLink to={"/Home"}>Home</NavLink></a> 
-             <a><NavLink to={"/Solution"}>Solution</NavLink></a> 
-              <a><NavLink to={"/Contact"}>Contact</NavLink></a>
-              <a><NavLink to={"/Testimonials"}>Testimonials</NavLink></a>
-              <a><NavLink to={"/About"}>About</NavLink></a>
+    <div className="w-screen ">
+       <div className=" text-white p-4  bg-black lg:space-x-44 flex  ">
+           <h1 className="text-1xl font-bold ">Real Estate </h1>
+           <div className="pl-6 space-x-5  lg:space-x-14 font-serif flex justify-center ">
+             <a className="hover:text-blue-300"><NavLink to={"/Home"}>Home</NavLink></a> 
+             <a className="hover:text-blue-300"><NavLink to={"/Solution"}>Solution</NavLink></a> 
+              <a className="hover:text-blue-300"><NavLink to={"/Contact"}>Contact</NavLink></a>
+       
+              <a className="hover:text-blue-300"><NavLink to={"/About"}>About</NavLink></a>
               
-               <span>
+               <span className=" lg:flex justify-end">
                  {
-                  isAuthenticated && <p className="text-sm font-semibold">
+                  isAuthenticated && <p className="text-sm font-semibold text-white">
                     Welcome , {user.name}
                   </p>
                  }
                </span>
               {
-                isAuthenticated ? <a className="bg-black text-white rounded-md p-1"><button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-                Log Out
-               </button></a> : <a className="bg-black text-white rounded-md p-1"><button onClick={() => loginWithRedirect()}>Log In</button></a>
+                isAuthenticated ? <a className="bg-white text-black hover:bg-stone-400 rounded-md p-1"><button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                Log Out</button></a>
+                 : <a className="bg-white text-black rounded-md  hover:bg-stone-400  p-1"><button onClick={() => loginWithRedirect()}>Log In</button></a>
               
               }
               
