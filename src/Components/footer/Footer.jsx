@@ -23,7 +23,7 @@ const Footer = () => {
                <a className="hover:text-blue-600 hover:underline"><NavLink to={"/Home"}>Home</NavLink></a> 
                <a className="hover:text-blue-600 hover:underline"><NavLink to={"/Solution"}>Solution</NavLink></a> 
                <a className="hover:text-blue-600 hover:underline"><NavLink to={"/Contact"}>Contact</NavLink></a>
-               <a className="hover:text-blue-600 hover:underline"><NavLink to={"/Testimonials"}>Testimonials</NavLink></a>
+            
                <a className="hover:text-blue-600 hover:underline"><NavLink to={"/About"}>About</NavLink></a>
                </div>
             </div>
